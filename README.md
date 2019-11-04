@@ -26,6 +26,7 @@ There are multiple workflow definitions. Each of those workflow definitions can 
 Input:- Workflow instance data, workflow definition id
 Output:- 
 
+```
 {
   "workflow_id": "f632043caef54335bc298c5f63662a6d",
   "popular_paths": [
@@ -52,6 +53,7 @@ Output:-
     }
   ]
 }
+```
 
 PreProcess:-
 1.    Retain only those Workflow Instances which are finished executing i.e. “IsExecuting = 0”
@@ -70,13 +72,3 @@ Process:-
 3.    Group by workflow instance to find the path taken for individual workflow instances.
 4.    Group by workflow definition to find unique paths taken for individual workflow definitions.
 5.    For each workflow definition, sort the unique paths based on the workflow instance count and select top_k popular paths.
-
-
-
-
-
-Distribution of unique paths for workflow definitions:-
-
-
-
-
